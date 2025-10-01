@@ -1,14 +1,14 @@
 # closed-circuit-ai
 
-![](assets/screenshot-00.png)
+![](https://raw.githubusercontent.com/Reclusive-Inc/closed-circuit-ai/refs/heads/main/assets/screenshot-00.png)
 
 ---
 
-![](assets/screenshot-01.png)
+![](https://raw.githubusercontent.com/Reclusive-Inc/closed-circuit-ai/refs/heads/main/assets/screenshot-01.png)
 
 ---
 
-![](assets/screenshot-02.png)
+![](https://raw.githubusercontent.com/Reclusive-Inc/closed-circuit-ai/refs/heads/main/assets/screenshot-02.png)
 
 ## Summary
 
