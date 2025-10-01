@@ -1,0 +1,14 @@
+.faded-pulse {
+    animation: faded-pulse-animation 2000ms linear infinite;
+}
+
+@keyframes faded-pulse-animation {
+    0%, 100% {
+        opacity: 0.1;
+        transform: scale(0.4);
+    }
+    50% {
+        opacity: 0.2;
+        transform: scale(0.6);
+    }
+}

@@ -1,0 +1,72 @@
+@media (pointer: coarse) and (hover: none) {
+    /* padding */
+    .mobile-p-0 { padding: var(--space-0); }
+    .mobile-p-1 { padding: var(--space-1); }
+    .mobile-p-2 { padding: var(--space-2); }
+    .mobile-p-3 { padding: var(--space-3); }
+    .mobile-p-4 { padding: var(--space-4); }
+    .mobile-p-5 { padding: var(--space-5); }
+    .mobile-p-6 { padding: var(--space-6); }
+    .mobile-p-7 { padding: var(--space-7); }
+    .mobile-p-8 { padding: var(--space-8); }
+
+    .mobile-px-0 { padding-left: var(--space-0); padding-right: var(--space-0); }
+    .mobile-px-1 { padding-left: var(--space-1); padding-right: var(--space-1); }
+    .mobile-px-2 { padding-left: var(--space-2); padding-right: var(--space-2); }
+    .mobile-px-3 { padding-left: var(--space-3); padding-right: var(--space-3); }
+    .mobile-px-4 { padding-left: var(--space-4); padding-right: var(--space-4); }
+    .mobile-px-5 { padding-left: var(--space-5); padding-right: var(--space-5); }
+    .mobile-px-6 { padding-left: var(--space-6); padding-right: var(--space-6); }
+    .mobile-px-7 { padding-left: var(--space-7); padding-right: var(--space-7); }
+    .mobile-px-8 { padding-left: var(--space-8); padding-right: var(--space-8); }
+
+    .mobile-py-0 { padding-top: var(--space-0); padding-bottom: var(--space-0); }
+    .mobile-py-1 { padding-top: var(--space-1); padding-bottom: var(--space-1); }
+    .mobile-py-2 { padding-top: var(--space-2); padding-bottom: var(--space-2); }
+    .mobile-py-3 { padding-top: var(--space-3); padding-bottom: var(--space-3); }
+    .mobile-py-4 { padding-top: var(--space-4); padding-bottom: var(--space-4); }
+    .mobile-py-5 { padding-top: var(--space-5); padding-bottom: var(--space-5); }
+    .mobile-py-6 { padding-top: var(--space-6); padding-bottom: var(--space-6); }
+    .mobile-py-7 { padding-top: var(--space-7); padding-bottom: var(--space-7); }
+    .mobile-py-8 { padding-top: var(--space-8); padding-bottom: var(--space-8); }
+
+    .mobile-pt-0 { padding-top: var(--space-0); }
+    .mobile-pt-1 { padding-top: var(--space-1); }
+    .mobile-pt-2 { padding-top: var(--space-2); }
+    .mobile-pt-3 { padding-top: var(--space-3); }
+    .mobile-pt-4 { padding-top: var(--space-4); }
+    .mobile-pt-5 { padding-top: var(--space-5); }
+    .mobile-pt-6 { padding-top: var(--space-6); }
+    .mobile-pt-7 { padding-top: var(--space-7); }
+    .mobile-pt-8 { padding-top: var(--space-8); }
+
+    .mobile-pr-0 { padding-right: var(--space-0); }
+    .mobile-pr-1 { padding-right: var(--space-1); }
+    .mobile-pr-2 { padding-right: var(--space-2); }
+    .mobile-pr-3 { padding-right: var(--space-3); }
+    .mobile-pr-4 { padding-right: var(--space-4); }
+    .mobile-pr-5 { padding-right: var(--space-5); }
+    .mobile-pr-6 { padding-right: var(--space-6); }
+    .mobile-pr-7 { padding-right: var(--space-7); }
+    .mobile-pr-8 { padding-right: var(--space-8); }
+
+    .mobile-pb-0 { padding-bottom: var(--space-0); }
+    .mobile-pb-1 { padding-bottom: var(--space-1); }
+    .mobile-pb-2 { padding-bottom: var(--space-2); }
+    .mobile-pb-3 { padding-bottom: var(--space-3); }
+    .mobile-pb-4 { padding-bottom: var(--space-4); }
+    .mobile-pb-5 { padding-bottom: var(--space-5); }
+    .mobile-pb-6 { padding-bottom: var(--space-6); }
+    .mobile-pb-7 { padding-bottom: var(--space-7); }
+    .mobile-pb-8 { padding-bottom: var(--space-8); }
+
+    .mobile-pl-0 { padding-left: var(--space-0); }
+    .mobile-pl-1 { padding-left: var(--space-1); }
+    .mobile-pl-2 { padding-left: var(--space-2); }
+    .mobile-pl-3 { padding-left: var(--space-3); }
+    .mobile-pl-4 { padding-left: var(--space-4); }
+    .mobile-pl-5 { padding-left: var(--space-5); }
+    .mobile-pl-6 { padding-left: var(--space-6); }
+    .mobile-pl-7 { padding-left: var(--space-7); }
+    .mobile-pl-8 { padding-left: var(--space-8); }
+}

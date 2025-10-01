@@ -1,0 +1,59 @@
+[build-system]
+requires = ["setuptools~=80.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "closed-circuit-ai"
+version = "1.0.0"
+dependencies = [
+    "fastapi~=0.118.0",
+    "filelock~=3.19.0",
+    "httpx~=0.28.0",
+    "ipykernel~=6.30.0",
+    "jupyter-client~=8.6.0",
+    "nbformat~=5.10.0",
+    "platformdirs~=4.4.0",
+    "pycrdt~=0.12.0",
+    "pycrdt-websocket~=0.16.0",
+    "pydantic~=2.11.0",
+    "uvicorn~=0.37.0",
+    "websockets~=15.0.0",
+]
+authors = [
+    { name = "Reclusive Inc.", email = "contact@reclusive.ai" },
+]
+description = "closed-circuit-ai"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+
+[project.urls]
+Homepage = "https://github.com/Reclusive-Inc/closed-circuit-ai"
+
+[project.scripts]
+ccai = "ccai.main:main"
+
+[tool.setuptools]
+packages = ["ccai", "ccai.kernel"]
+include-package-data = true
+
+[tool.setuptools.package-data]
+ccai = [
+    "app/index.html",
+    "app/notebook.html",
+    "app/favicon.ico",
+    "app/favicon.svg",
+    "app/static/**/*",
+    "apps/chat/__init__.py",
+    "apps/chat/v1/__init__.py",
+    "apps/chat/v1/chat.html",
+    "apps/chat/v1/chat.ipynb",
+    "apps/chat/v1/chat.py",
+    "apps/chat/v1/static/**/*",
+]

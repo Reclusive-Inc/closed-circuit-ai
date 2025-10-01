@@ -1,0 +1,53 @@
+.markdown {
+    h1, h2, h3, h4, h5, h6 {
+        margin: var(--space-2) var(--space-0);
+    }
+
+    p {
+        margin: var(--space-2) var(--space-0);
+    }
+
+    pre {
+        padding: var(--space-4) var(--space-0);
+    }
+
+    code {
+    }
+
+    blockquote {
+        padding-left: var(--space-4);
+    }
+
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        padding: var(--space-2);
+    }
+
+    ul, ol {
+        margin: var(--space-2) var(--space-0);
+        padding-left: var(--space-4);
+    }
+
+    ul {
+        list-style-type: disc;
+    }
+
+    ol {
+        list-style-type: decimal;
+    }
+
+    li {
+        margin-bottom: var(--space-1);
+    }
+
+    & > :first-child {
+        margin-top: 0;
+    }
+
+    & > :last-child {
+        margin-bottom: 0;
+    }
+}

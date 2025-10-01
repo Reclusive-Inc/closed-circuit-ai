@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>closed-circuit-ai</title>
+    <link rel="icon" href="favicon.ico" sizes="32x32"/>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml"/>
+    <script>
+        try {
+            window.setTheme = (theme) => {
+                if (theme === window.theme) return;
+                window.theme = theme;
+                const element = document.documentElement;
+                element.classList.forEach(c => {
+                    if (c.startsWith('theme-')) {
+                        element.classList.remove(c);
+                    }
+                });
+                element.classList.add('theme-' + theme);
+                element.setAttribute('data-theme', theme);
+                window.localStorage.setItem('theme', theme);
+                window.dispatchEvent(new CustomEvent('theme', {detail: theme}));
+            };
+            window.addEventListener('storage', (event) => {
+                if (event.key === 'theme') window.setTheme(event.newValue);
+            });
+            let theme = window.localStorage.getItem('theme');
+            if (!theme) {
+                theme = 'dark';
+                window.localStorage.setItem('theme', theme);
+            }
+            window.setTheme(theme);
+        } catch (e) {
+        }
+    </script>
+    <style>
+        :root { color-scheme: dark; --color-background-ccai: #171717; }
+        html[data-theme='light'] { color-scheme: light; --color-background-ccai: #f9f9f9; }
+        #ccai { background-color: var(--color-background-ccai); }
+        #root.preload { opacity: 0; }
+        #root { opacity: 1; transition: opacity 300ms ease-in; }
+    </style>
+    <link rel="stylesheet" href="/static/ccai/fonts.v1.min.css"/>
+    <link rel="stylesheet" href="/static/fontawesome/6.7.2/css/fontawesome.min.css"/>
+    <link rel="stylesheet" href="/static/fontawesome/6.7.2/css/regular.min.css"/>
+    <link rel="stylesheet" href="/static/fontawesome/6.7.2/css/solid.min.css"/>
+    <link rel="stylesheet" href="/static/ccai/ccai.v1.min.css"/>
+</head>
+<body id="ccai">
+<div id="root" class="preload"></div>
+<script type="importmap">
+    {
+      "imports": {
+        "ccai": "/static/ccai/ccai.v1.min.js",
+        "react": "/static/react/18.3.1/react.js",
+        "react/jsx-runtime": "/static/react/18.3.1/jsx-runtime.js",
+        "react-dom": "/static/react-dom/18.3.1/react-dom.js",
+        "react-dom/client": "/static/react-dom/18.3.1/client.js",
+        "radix-ui": "/static/radix-ui/1.4.3/radix-ui.js",
+        "@radix-ui/react-icons": "/static/radix-ui-icons/1.3.2/react-icons.js",
+        "uuid": "/static/uuid/11.1.0/uuid.js",
+        "highlight.js": "/static/highlight-js/11.11.1/highlight.js",
+        "markdown-it": "/static/markdown-it/14.1.0/markdown-it.js",
+        "ansi-to-html": "/static/ansi-to-html/0.7.2/ansi-to-html.js",
+        "yjs": "/static/yjs/13.6.27/yjs.js",
+        "y-websocket": "/static/y-websocket/3.0.0/y-websocket.js",
+        "y-indexeddb": "/static/y-indexeddb/9.0.12/y-indexeddb.js",
+        "y-codemirror.next": "/static/y-codemirror/0.3.5/y-codemirror.js",
+        "@codemirror/state": "/static/codemirror-state/6.5.2/state.js",
+        "@codemirror/view":  "/static/codemirror-view/6.38.1/view.js",
+        "@codemirror/language": "/static/codemirror-language/6.11.3/language.js",
+        "@codemirror/lang-python": "/static/codemirror-lang-python/6.2.1/lang-python.js",
+        "@codemirror/lang-markdown": "/static/codemirror-lang-markdown/6.3.4/lang-markdown.js",
+        "@codemirror/lang-javascript": "/static/codemirror-lang-javascript/6.2.4/lang-javascript.js",
+        "@codemirror/lang-json": "/static/codemirror-lang-json/6.0.2/lang-json.js",
+        "@codemirror/lang-html": "/static/codemirror-lang-html/6.4.9/lang-html.js",
+        "@codemirror/lang-css": "/static/codemirror-lang-css/6.3.1/lang-css.js",
+        "@codemirror/commands": "/static/codemirror-commands/6.8.1/commands.js",
+        "@codemirror/search": "/static/codemirror-search/6.5.11/search.js",
+        "@codemirror/autocomplete": "/static/codemirror-autocomplete/6.18.6/autocomplete.js",
+        "@codemirror/lint": "/static/codemirror-lint/6.8.5/lint.js",
+        "@lezer/common": "/static/lezer-common/1.2.3/common.js",
+        "@lezer/highlight": "/static/lezer-highlight/1.2.1/highlight.js",
+        "@lezer/lr": "/static/lezer-lr/1.4.2/lr.js",
+        "@lezer/python": "/static/lezer-python/1.1.18/python.js",
+        "@lezer/markdown": "/static/lezer-markdown/1.4.3/markdown.js",
+        "@lezer/javascript": "/static/lezer-javascript/1.5.1/javascript.js",
+        "@lezer/json": "/static/lezer-json/1.0.3/json.js",
+        "@lezer/html": "/static/lezer-html/1.3.10/html.js",
+        "@lezer/css": "/static/lezer-css/1.3.0/css.js"
+      }
+    }
+</script>
+<script type="module">
+    import {App} from 'ccai';
+    import {createElement} from 'react';
+    import {createRoot} from 'react-dom/client';
+    const root = createRoot(document.getElementById('root'));
+    root.render(createElement(App));
+</script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+/* themes */
+:root {
+    color-scheme: dark;
+    --color-background-ccai: #171717;
+    --color-background: #1f1f1f;
+    --color-background-header: #212121;
+    --color-background-panel: #28292a;
+    --color-text: #bfbfbf;
+    --color-text-strong: #e8e8e8;
+    --color-text-muted: #80868b;
+    --color-text-link: #99c3ff;
+    --color-border: #313335;
+    --color-cm-border: #1e1f22;
+    --color-button-hover: rgba(191, 191, 191, 0.15);
+    --color-button-active: rgba(191, 191, 191, 0.20);
+}
+
+html[data-theme='dark'] {
+
+}
+
+html[data-theme='light'] {
+    color-scheme: light;
+    --color-background-ccai: #f9f9f9;
+    --color-background: #ffffff;
+    --color-background-header: #fafafa;
+    --color-background-panel: #f4f4f4;
+    --color-text: #474747;
+    --color-text-strong: #1f1f1f;
+    --color-text-muted: #70757a;
+    --color-text-link: #1a0dab;
+    --color-border: #dadce0;
+    --color-cm-border: #dddddd;
+    --color-button-hover: rgba(191, 191, 191, 0.15);
+    --color-button-active: rgba(191, 191, 191, 0.20);
+}
+
+/* spacing */
+:root {
+    --space-0: 0;
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 1.25rem;
+    --space-6: 1.5rem;
+    --space-7: 1.75rem;
+    --space-8: 2rem;
+}
+
+/* sizes */
+:root {
+    --content-max-width: 1024px;
+    --sidebar-width: 25vw;
+    --sidebar-max-width: 250px;
+    --sidebar-button-max-width: 160px;
+    --tab-max-width: 180px;
+    --footer-max-height: 300px;
+}

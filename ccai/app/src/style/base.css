@@ -1,0 +1,84 @@
+html {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    font-size: 16px;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+#root {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    min-height: 0;
+}
+
+.monospace {
+    font-family: "Roboto Mono", monospace;
+}
+
+code {
+    font-family: "Roboto Mono", monospace;
+}
+
+pre {
+    display: block;
+    font-family: "Roboto Mono", monospace;
+    white-space: pre;
+    overflow-x: auto;
+}
+
+strong, b {
+    font-weight: 500;
+}
+
+em, i {
+    font-style: italic;
+}
+
+button {
+    -webkit-appearance: none;
+    appearance: none;
+    display: block;
+    background: transparent;
+    margin: var(--space-0);
+    padding: var(--space-0);
+    border: 1px solid var(--color-border);
+    border-radius: 2px;
+    font: inherit;
+    color: inherit;
+    line-height: inherit;
+    text-align: inherit;
+    cursor: pointer;
+    align-items: center;
+    white-space: nowrap;
+}
+
+button:hover {
+    background-color: var(--color-button-hover);
+}
+
+button:active {
+    background-color: var(--color-button-active);
+}
+
+button:disabled,
+button:disabled:hover {
+    cursor: not-allowed;
+    opacity: 0.3;
+}

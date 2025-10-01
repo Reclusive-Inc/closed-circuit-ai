@@ -1,0 +1,53 @@
+.cm-container {
+    .cm-editor {
+        outline: none;
+
+        .cm-scroller {
+            font-family: "Roboto Mono", monospace;
+        }
+    }
+
+    .cm-content {
+        padding-top: var(--space-2);
+        padding-bottom: var(--space-2);
+    }
+
+    .cm-line {
+        padding-left: var(--space-2);
+        padding-right: var(--space-1);
+    }
+
+    .cm-ySelectionCaret:hover > .cm-ySelectionCaretDot {
+        transform: scale(1);
+    }
+
+    .cm-ySelectionCaret:hover > .cm-ySelectionInfo {
+        opacity: 0;
+    }
+
+    &.cm-max-height-65px {
+        .cm-editor {
+            max-height: 65px;
+        }
+    }
+
+    &.cm-max-height-10vh {
+        .cm-editor {
+            max-height: 10vh;
+        }
+    }
+
+    &.cm-min-height-10vh {
+        .cm-content, .cm-gutter {
+            min-height: 10vh;
+        }
+    }
+
+    &.cm-border { .cm-editor { border: 1px solid var(--color-cm-border); } }
+    &.cm-border-x { .cm-editor { border-left: 1px solid var(--color-cm-border); border-right: 1px solid var(--color-cm-border); } }
+    &.cm-border-y { .cm-editor { border-top: 1px solid var(--color-cm-border); border-bottom: 1px solid var(--color-cm-border); } }
+    &.cm-border-t { .cm-editor { border-top: 1px solid var(--color-cm-border); } }
+    &.cm-border-r { .cm-editor { border-right: 1px solid var(--color-cm-border); } }
+    &.cm-border-b { .cm-editor { border-bottom: 1px solid var(--color-cm-border); } }
+    &.cm-border-l { .cm-editor { border-left: 1px solid var(--color-cm-border); } }
+}
